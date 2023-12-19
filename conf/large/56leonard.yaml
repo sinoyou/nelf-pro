@@ -1,0 +1,34 @@
+experiment_name: 56leonard
+method_name: nelf-pro-large
+
+trainer:
+    visualize_seperate_eval_images: True
+    visualize_scene: True
+    load_dir: ~
+
+pipeline:
+    datamanager:
+        eval_image_indices: ~
+        dataparser:
+            raw_loader: 'bungee'
+            eval_interval: 16
+            orientation_method: 'none'
+            downscale_factor: 3
+            center_poses: False
+            auto_scale_poses: False
+            data: './data/multiscale_google_56Leonard'
+    model:
+        background_color: 'last_sample' 
+        distortion_loss_mult: 0.0001
+        distortion_loss_mult_factor_max: 20
+        near_plane: 0.1
+        far_plane: 200
+        init_sampler: 'uniform' 
+        use_earth_collider: True
+        earth_collider_scale: 0.006298
+        near_basis: 16
+        near_core: 3
+        freq_theta: 4
+        freq_phi: 4
+        
+vis: wandb

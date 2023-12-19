@@ -1,0 +1,30 @@
+experiment_name: mip360
+method_name: nelf-pro-small
+
+trainer:
+    visualize_seperate_eval_images: True
+    visualize_scene: True
+    load_dir: ~
+
+pipeline:
+    datamanager:
+        eval_image_indices: [4]
+        dataparser:
+            raw_loader: 'llff'
+            downscale_factor: 2  # change 2 to 4 for outdoor scenes
+            center_poses: True
+            auto_scale_poses: True
+            data: './data/360/bonsai'
+    model:
+        background_color: 'random' 
+        distortion_loss_mult: 0.0001
+        distortion_loss_mult_factor_max: 100
+        near_plane: 0.2
+        far_plane: 1000
+        init_sampler: 'uniformdisp' 
+        near_basis: 16
+        near_core: 3
+        freq_theta: 5
+        freq_phi: 5
+        
+vis: wandb

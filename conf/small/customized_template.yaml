@@ -1,0 +1,34 @@
+experiment_name: customized
+method_name: nelf-pro-small
+
+trainer:
+    visualize_seperate_eval_images: True
+    visualize_scene: True
+    load_dir: ~
+
+pipeline:
+    datamanager:
+        eval_image_indices: ~
+        dataparser:
+            raw_loader: 'nerfstudio'
+            downscale_factor: 2                 # change for different resolution
+            center_poses: True
+            auto_scale_poses: False             # change, please consider scene scale and distribution
+            data_num_core: 3                    # change, should be consistent with model.num_core
+            data_num_basis: 64                  # change, should be consistent with model.num_basis
+            data: /path/to/your/data            # change
+    model:
+        background_color: 'random' 
+        distortion_loss_mult: 0.0001
+        distortion_loss_mult_factor_max: 100
+        near_plane: 0.5                         # change, please consider scene scale and distribution
+        far_plane: 100                          # change, please consider scene scale and distribution
+        init_sampler: 'sqrt'                    # change, please consider scene scale and distribution
+        num_basis: 64                           # change, require tuning
+        near_basis: 16                              
+        num_core: 3                             # change, require tuning
+        near_core: 2                    
+        freq_theta: 4                           # change, require tuning
+        freq_phi: 4                             # change, require tuning
+        
+vis: wandb

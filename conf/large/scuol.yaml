@@ -1,0 +1,31 @@
+experiment_name: scuol
+method_name: nelf-pro-large
+
+trainer:
+    visualize_seperate_eval_images: True
+    visualize_scene: True
+    load_dir: ~
+
+pipeline:
+    datamanager:
+        eval_image_indices: ~
+        dataparser:
+            raw_loader: 'nerfstudio'
+            orientation_method: 'up'
+            downscale_factor: 2
+            center_poses: True
+            auto_scale_poses: False
+            data: './data/scuol'
+    model:
+        background_color: 'last_sample' 
+        distortion_loss_mult: 0.0001
+        distortion_loss_mult_factor_max: 20
+        near_plane: 0.05
+        far_plane: 100
+        init_sampler: 'log' 
+        near_basis: 16
+        near_core: 2
+        freq_theta: 4
+        freq_phi: 4
+
+vis: wandb

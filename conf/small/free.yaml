@@ -1,0 +1,30 @@
+experiment_name: free
+method_name: nelf-pro-small
+
+trainer:
+    visualize_seperate_eval_images: True
+    visualize_scene: True
+    load_dir: ~
+
+pipeline:
+    datamanager:
+        eval_image_indices: [4]
+        dataparser:
+            raw_loader: 'llff'
+            downscale_factor: 2
+            center_poses: True
+            auto_scale_poses: False
+            data: './data/free_dataset/stair'
+    model:
+        background_color: 'random' 
+        distortion_loss_mult: 0.0001
+        distortion_loss_mult_factor_max: 100
+        near_plane: 0.5
+        far_plane: 100
+        init_sampler: 'sqrt' 
+        near_basis: 16
+        near_core: 2
+        freq_theta: 4
+        freq_phi: 4
+        
+vis: wandb
