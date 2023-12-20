@@ -57,8 +57,7 @@ pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 -f https://download.py
 ```bash
 pip install --upgrade pip setuptools
 pip install -e .
-# install tab completion (optional)
-ns-install-cli
+ns-install-cli # install tab completion (optional)
 ```
 
 ## 2. Prepare Dataset 

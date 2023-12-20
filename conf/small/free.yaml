@@ -14,7 +14,7 @@ pipeline:
             downscale_factor: 2
             center_poses: True
             auto_scale_poses: False
-            data: './data/free_dataset/stair'
+            data: './data/free/stair'
     model:
         background_color: 'random' 
         distortion_loss_mult: 0.0001
