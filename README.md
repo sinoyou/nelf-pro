@@ -68,8 +68,8 @@ NeLF-Pro uses the datasets from the following sources for training and evaluatio
 - 360_v2[1]: [http://storage.googleapis.com/gresearch/refraw360/360_v2.zip](http://storage.googleapis.com/gresearch/refraw360/360_v2.zip)
 - Free Dataset[2]: [https://www.dropbox.com/sh/jmfao2c4dp9usji/AAC7Ydj6rrrhy1-VvlAVjyE_a?dl=0](https://www.dropbox.com/sh/jmfao2c4dp9usji/AAC7Ydj6rrrhy1-VvlAVjyE_a?dl=0)
 - Bungee NeRF[3]: [https://drive.google.com/file/d/1VkDerpfPhBuKmj3XewOzpGihKhOKSJaX/view?usp=drive_link](https://drive.google.com/file/d/1VkDerpfPhBuKmj3XewOzpGihKhOKSJaX/view?usp=drive_link)
-- Scuol: to be released. 
-- KITTI360-Big[4]: to be released.
+- Scuol: download [video](https://www.youtube.com/watch?v=kpXiVSmvbKg&t=1s) and use `ns-process-data` to process it.
+- KITTI360-Big[4]: refer to [this](./docs/kitti360_big_prepare.md) for extracting the partition. 
 
 ## 3. Training Your Model 
 
@@ -210,7 +210,6 @@ The folder `scripts/` contains many useful scripts on training, evaluation, expo
 |-- ...
 ```
 
-
 # Acknowledgment
 
 The repo is built on [SDFStudio](https://github.com/autonomousvision/sdfstudio) and [NeRFStudio](https://github.com/nerfstudio-project/nerfstudio). Some codes are inspired by [TensoRF](https://github.com/apchenstu/TensoRF) and [BungeeNeRF](https://github.com/city-super/BungeeNeRF). 
@@ -225,4 +224,14 @@ The repo is built on [SDFStudio](https://github.com/autonomousvision/sdfstudio) 
 [4] KITTI-360: A novel dataset and benchmarks for urban scene understanding in 2d and 3d. 
 
 # Citation 
-TBD
+
+If you find this repo useful, please cite
+
+```
+@article{You2023NeLF-Pro,
+  author    = {You, Zinuo and Chen, Anpei and Geiger, Andreas},
+  title     = {NeLF-Pro: Neural Light Field Probes},
+  journal   = {Coming Soon},
+  year      = {2023},
+}
+```
