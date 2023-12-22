@@ -227,10 +227,10 @@ The repo is built on [SDFStudio](https://github.com/autonomousvision/sdfstudio) 
 If you find this repo useful, please cite
 
 ```
-@article{You2023NeLF-Pro,
-  author    = {You, Zinuo and Chen, Anpei and Geiger, Andreas},
-  title     = {NeLF-Pro: Neural Light Field Probes},
-  journal   = {Coming Soon},
-  year      = {2023},
+@article{you2023nelfpro,
+    title={NeLF-Pro: Neural Light Field Probes}, 
+    author={You, Zinuo and Geiger, Andreas and Chen, Anpei},
+    journal   = {arXiv:2312.13328},
+    year      = {2023},    
 }
 ```
