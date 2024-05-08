@@ -1,10 +1,13 @@
 <!-- # NeLF-Pro -->
 <!-- [[Project Page]](https://sinoyou.github.io/nelf-pro/) -->
 <p align="center">
-<h1 align="center">NeLF-Pro: Neural Light Field Probes</h1>
-<h3 align="center"><a href="https://sinoyou.github.io/nelf-pro/">Project Page</a></h3>
+<h1 align="center">NeLF-Pro</h1>
+<h3 align="center">Neural Light Field Probes for Multi-Scale Novel View Synthesis</h3>
+<h3 align="center">CVPR 2024</h3>
+<h3 align="center"><a href="https://sinoyou.github.io/nelf-pro/">Project Page</a> | <a href="https://arxiv.org/abs/2312.13328">Arxiv</a></h3>
 </p>
-<p align="center">
+<p align="center
+    ">
     <img src="./media/teaser-bg.png" height="200">
 </p>
 
@@ -14,6 +17,8 @@
   <img src="./media/scuol.gif" height="100" style="margin-right: 10px;"/>
   <img src="./media/56leonard.gif" height="100"/>
 </p>
+
+This repository contains the Pytorch implementation of our method in the CVPR'24 paper "NeLF-Pro: Neural Light Field Probes for Multi-Scale Novel View Synthesis".
 
 <!-- The implementation of NeLF-Pro: Neural Light Field Probes.  -->
 
