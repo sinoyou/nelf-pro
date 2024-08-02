@@ -54,7 +54,7 @@ CONSOLE = Console(width=120)
 AnnotatedDataParserUnion = tyro.conf.OmitSubcommandPrefixes[  # Omit prefixes of flags in subcommands.
     tyro.extras.subcommand_type_from_defaults(
         {
-            # "placeholder": NeLFProDataParserConfig(),  # placeholder for default (not used), make sure ns-train cmd works. 
+            "placeholder": NeLFProDataParserConfig(),  # placeholder for default (not used), make sure ns-train cmd works. 
             "nelfpro-data": NeLFProDataParserConfig(),
         },
         prefix_names=False,  # Omit prefixes in subcommands themselves.
