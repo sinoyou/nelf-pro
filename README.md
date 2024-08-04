@@ -72,7 +72,7 @@ NeLF-Pro uses the datasets from the following sources for training and evaluatio
 - 360_v2[1]: [http://storage.googleapis.com/gresearch/refraw360/360_v2.zip](http://storage.googleapis.com/gresearch/refraw360/360_v2.zip)
 - Free Dataset[2]: [https://www.dropbox.com/sh/jmfao2c4dp9usji/AAC7Ydj6rrrhy1-VvlAVjyE_a?dl=0](https://www.dropbox.com/sh/jmfao2c4dp9usji/AAC7Ydj6rrrhy1-VvlAVjyE_a?dl=0)
 - Bungee NeRF[3]: [https://drive.google.com/file/d/1VkDerpfPhBuKmj3XewOzpGihKhOKSJaX/view?usp=drive_link](https://drive.google.com/file/d/1VkDerpfPhBuKmj3XewOzpGihKhOKSJaX/view?usp=drive_link)
-- Scuol: download [video](https://www.youtube.com/watch?v=kpXiVSmvbKg&t=1s) and use `ns-process-data` to process it.
+- Scuol: We have released the processed dataset for reproducibility [google drive](https://drive.google.com/drive/folders/1LXy4iShSR-7FfWzN2_mp3pkBUyhcUum9?usp=drive_link). You can also prepare the dataset by downloading [video](https://www.youtube.com/watch?v=kpXiVSmvbKg&t=1s) and using `ns-process-data` to process it.
 - KITTI360-Big[4]: refer to [this](./docs/kitti360_big_prepare.md) for extracting the partition. 
 
 ## 3. Training Your Model 
