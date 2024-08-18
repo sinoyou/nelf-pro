@@ -232,10 +232,10 @@ The repo is built on [SDFStudio](https://github.com/autonomousvision/sdfstudio) 
 If you find this repo useful, please cite
 
 ```
-@article{you2023nelfpro,
-    title={NeLF-Pro: Neural Light Field Probes}, 
-    author={You, Zinuo and Geiger, Andreas and Chen, Anpei},
-    journal   = {arXiv:2312.13328},
-    year      = {2023},    
-}
+    @inproceedings{You2024CVPR,
+      author = {Zinuo You and Andreas Geiger and Anpei Chen},
+      title = {NeLF-Pro: Neural Light Field Probes for Multi-Scale Novel View Synthesis},
+      booktitle = {Conference on Computer Vision and Pattern Recognition (CVPR)},
+      year = {2024}
+    }
 ```
